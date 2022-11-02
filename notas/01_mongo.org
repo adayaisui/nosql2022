@@ -19,20 +19,20 @@ Aunque la flexibilidad nos llevaría a no tomarlo tan en serio, realmente hay ap
 
 * Contenedor de Docker
 #+begin_src shell
-  docker stop mongo
-  docker rm mongo
-  export DATA_DIR=`pwd`/data
-  echo $DATA_DIR
-  export EX_DIR=`pwd`/mongodb-sample-dataset
-  echo $EX_DIR
-  mkdir -p $DATA_DIR
-  docker run -p 27017:27017 \
-         -v $DATA_DIR:/data/db \
-         -v $EX_DIR:/mongodb-sample-dataset \
-         --name mongo \
-         -d mongo
+  docker stop mongo #detiene el mongo
+  docker rm mongo #borra el mongo
+  export DATA_DIR=`pwd`/data #exporta el directorio de data
+  echo $DATA_DIR #lo imprime?
+  export EX_DIR=`pwd`/mongodb-sample-dataset #exporta el sample dataset
+  echo $EX_DIR #lo imprime
+  mkdir -p $DATA_DIR #crea el directorio data_dir
+  docker run -p 27017:27017 \ #corriendo el docker en el puerto 27017 equivalente a un "create"
+         -v $DATA_DIR:/data/db \ #creando el primer volumen de data_dir
+         -v $EX_DIR:/mongodb-sample-dataset \ #creando el segundo volumen de ex_dir, sample_dataset
+         --name mongo \ #se le asigna el nombre mongo
+         -d mongo #run container in background and print container id
   sleep 2
-  docker exec -it mongo mongosh
+  docker exec -it mongo mongosh #te crea como una terminal en el container que está corriendo 
 #+end_src
 
 #+RESULTS:
