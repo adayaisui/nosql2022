@@ -145,3 +145,4 @@ Gracias a su resiliencia y capacidad, podemos equivocarnos y dar servicio a las 
   - Es barato.
   - Una parte se va al DWH y otra a Analytics.
   - Ejemplos: S3, GCS, Hadoop, Dropbox y Drive
+  - Foto de tabla comparación: https://i.imgur.com/YIbAeG2.png
