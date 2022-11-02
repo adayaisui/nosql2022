@@ -133,7 +133,7 @@ Link foto base2: https://i.imgur.com/AljRFIW.png
 - Propósito específico
 - Uno por área de negocio
 - Rápidas para acceder.
-* Data Lake (copia con periodicidad de las bases operativas) Un data lake es un gran conjunto de datos en bruto, que todavía no tiene una finalidad definida (Raw).
+** Data Lake (copia con periodicidad de las bases operativas) Un data lake es un gran conjunto de datos en bruto, que todavía no tiene una finalidad definida (Raw).
 ** Fuentes de datos
 TODAS
 ** Carga a un solo lugar
