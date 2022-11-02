@@ -7,16 +7,16 @@
 ** Inicio de Mongo
 
 #+begin_src shell
-  docker volume create mongo-data
-  docker stop mongo
-  docker rm mongo
+  docker volume create mongo-data #crea el volumen mongo-data para poder guardar datos ahí y usar datos de ese volumen
+  docker stop mongo #detiene mongo
+  docker rm mongo #borra el contenedor mongo
   # cd carpeta de sus datos
-  export EX_DIR=`pwd`/mongodb-sample-dataset
-  echo $EX_DIR
-  mkdir -p $DATA_DIR
-  docker run -p 27017:27017 \
-         -v mongo-data:/data/db \
-         -v $EX_DIR:/mongodb-sample-dataset \
+  export EX_DIR=`pwd`/mongodb-sample-dataset #lo exporta sample-dataset
+  echo $EX_DIR #lo imprime
+  mkdir -p $DATA_DIR #hace un directorio
+  docker run -p 27017:27017 \ #corre un writeable container en el puerto 27017
+         -v mongo-data:/data/db \ #la dirección donde están los datos que quieres usar en el volumen
+         -v $EX_DIR:/mongodb-sample-dataset \ #lo de arriba pero para sample-datset
          --name mongo \
          -d mongo
 #+end_src
