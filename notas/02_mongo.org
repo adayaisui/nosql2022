@@ -158,7 +158,7 @@ El input de la agregación puede ser 1 o más documentos en array.
 
 No hay límites en cuanto al num de elementos de cada tipo para el pipeline (les llamamos _stages_), es decir, podemos combinar cualquier número de operadores. *SIN EMBARGO* el límite por pipeline en cuanto a su memory footprint es de *100MB*.
 
-* Stage ~$match~
+* Stage ~$match~ _Where_
 
 El primer stage en los pipelines de agregación es similar al ~find()~ para filtrar documentos en los que estamos interesados:
 
@@ -168,7 +168,7 @@ El primer stage en los pipelines de agregación es similar al ~find()~ para filt
   ])
 #+end_src
 
-Y al igual que el ~find()~, podemos hacer ~$project~:
+Y al igual que el ~find()~, podemos hacer ~$project~: _select_
 
 #+begin_src js
   db.universities.aggregate([
@@ -177,7 +177,7 @@ Y al igual que el ~find()~, podemos hacer ~$project~:
   ])
 #+end_src
 
-* Stage ~$group~
+* Stage ~$group~ _group by_
 
 El ~group by~ de MongoDB y el corazón de operaciones como count, sum, avg, etc.
 
@@ -510,7 +510,7 @@ El resultado debe ser:
   { "_id" : "A", "mergedSales" : { "2017Q1" : 500, "2017Q2" : 500, "2016Q1" : 400, "2016Q2" : 300, "2016Q3" : 0, "2016Q4" : 0 } }
 #+end_src
 
-* Stages ~$sort~ y ~$limit~
+* Stages ~$sort~ y ~$limit~ sort: order by
 
 El sort y el limit puede usarse como stage de un pipeline de agregación, o puede usarse _standalone_ como lo hemos hecho antes para ordenar resulsets individuales.
 
