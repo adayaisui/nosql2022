@@ -66,7 +66,8 @@ $100 MMDD
   - Subsidiarioas
   - Filiales
   - Franquicias
-*** Velocidad 1 (solidez, confiabilidad, estabilidad y compliance) Datos que no te puedes perder, pero pueden ser lentos.
+*** Velocidad 1: solidez, confiabilidad, estabilidad y compliance 
+**** Datos que no puedes perder, tienden a ser ser lentos.
 - Sistémicos Nacionales
   - INAI
   - INEGI
@@ -78,7 +79,8 @@ $100 MMDD
   - COFEPRIS (Riesgos a la salud, higiene: productos)
   - CNBV (Bolsa de valores)
   - SAT
-*** Velocidad 2 (agilidad, fluidez, experimentación) Datos que no es tan importante respaldar, pero necesitan ser rápidos.
+*** Velocidad 2: agilidad, fluidez, experimentación
+**** Datos que no son tan importantes de respaldar, pero necesitan ser rápidos.
 - Partners Comerciales
   - Proveedores
   - Outsourcing
@@ -90,7 +92,7 @@ $100 MMDD
   - Franquicias
 ** Diferencia de velocidades
 *** Velocidad 1 & 2
-*** Velocidad Operativa
+- Velocidad Operativa
 - Escritura
 - Lectura
 _Walmart tiene ambas: S1 por obligaciones legales, S2 por su parte en línea._
@@ -108,7 +110,8 @@ _Walmart tiene ambas: S1 por obligaciones legales, S2 por su parte en línea._
 
 _Waterfall: poco resiliente a los cambios, se debe de diseñar muy bien_
 _En una misma empresa, pueden haber varias y/o distintas bases de datos_
-_Antes el acceso a las bases de datos era directo y era más fácil desarrollarlos, ahora no tanto_
+_Antes el acceso a las bases de datos era directa y era más fácil desarrollarlas, ahora no tanto_
+
 Link foto base: https://i.imgur.com/Nlp8LgN.png
 Link foto base2: https://i.imgur.com/AljRFIW.png
 
